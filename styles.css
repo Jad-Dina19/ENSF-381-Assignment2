@@ -288,3 +288,23 @@ body{
     background-color: #45A049;
     opacity: 1.0;
 }
+
+.ice-cream-tiles, .season-special-tiles{
+    background-color: #fff8ee;
+}
+
+
+
+.ice-cream-tiles:hover, .season-special-tiles:hover {
+    background-color: #ffffff; 
+}
+
+
+.cart-item {
+    width: 100%;
+    border-bottom: 1px solid #e4b48c;
+    padding: 5px;
+}
+
+
+
