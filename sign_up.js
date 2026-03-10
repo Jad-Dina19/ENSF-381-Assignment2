@@ -38,7 +38,7 @@ function confirmPass(p, cp){
 }
 
 function confirmEmail(email){
-    let regex = /^[A-Za-z0-9]+@(.*)\.(com|net|io)$/;
+    let regex = /^[A-Za-z0-9._-]+@(.*)\.(com|net|io)$/;
     return regex.test(email);
 }
 
@@ -62,6 +62,13 @@ function ValidateSignup(){
         loginMenu.appendChild(div)
         return;
     }
+    
+    if(!confirmEmail(email)){
+        div.textContent = "Invalid email(Must be a valid email address format (e.g., username@example.com))";
+        div.classList.add("error-message");
+        loginMenu.appendChild(div)
+        return;
+    }
 
     if(!validatePassword(password)){
         div.textContent = "Invalid password (Min 8 characters, one capital letter, one lowercase, and one special charachter from : !@#$%^&*()-_=+[]{}|;:\'\",.<>?/`~.)";
@@ -69,13 +76,7 @@ function ValidateSignup(){
         loginMenu.appendChild(div)
         return;
     }
-
-    if(!confirmEmail(email)){
-        div.textContent = "Invalid email(Must be a valid email address format (e.g., username@example.com))";
-        div.classList.add("error-message");
-        loginMenu.appendChild(div)
-        return;
-    }
+    
 
     if(!confirmPass(password, confirmPassword)){
         div.textContent = "Passwords do not match";

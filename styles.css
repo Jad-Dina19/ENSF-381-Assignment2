@@ -270,7 +270,7 @@ body{
 .error-message{
     padding: 8px 14px;
     background-color: rgba(255, 0, 0, 0.4);
-    color: rgb(114, 2, 2)
+    color: rgb(114, 2, 2);
     text-align: center; 
     margin: 10px;
     border-radius: 15px;
