@@ -8,6 +8,11 @@ async function getData(){
     return await data.json();
 }
 function validateLogin(){
+    let last = loginMenu.lastElementChild;
+
+    if(last && (last.classList.contains("error-message") || last.classList.contains("success-message"))){
+        loginMenu.removeChild(last);
+    }
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
     getData().then((users) => {
