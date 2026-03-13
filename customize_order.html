@@ -24,40 +24,36 @@
 
             <form action="order_summary.html" id="order-form">
                 <img src="Picture2.jpeg" alt="Ice Cream Banner" class="banner-img">
-
-                <h3>Vanilla Dream</h3>
-                <p><b>Choose Type</b></p>
-                <input type="radio" id="cup" name="type" value="Cup">
-                <br>
-                <label for="cup">Cup</label>
+                <div class = "customize-order">
+                    <h3>Vanilla Dream</h3>
+                    <p><b>Choose Type</b></p>
+                    <input type="radio" id="cup" name="type" value="Cup">
+                    <br>
+                    <label for="cup">Cup</label>
+                    
+                    <br> <input type="radio" id="cone" name="type" value="Cone">
+                    <br>
+                    <label for="cone">Cone</label>
+                </div>
+                 
+                <div class ="customize-order">
+                    <h3>Chocolate Bliss</h3>
+                    <p><b>Select Toppings:</b></p>
+                    <input type="checkbox" id="sprinkles" name="topping" value="Sprinkles">
+                    <br>
+                    <label for="sprinkles">Sprinkles</label>
+                    <br>
                 
-                <br> <input type="radio" id="cone" name="type" value="Cone">
-                <br>
-                <label for="cone">Cone</label>
-                <br><br>
+                    <input type="checkbox" id="nuts" name="topping" value="Nuts">
+                    <br>
+                    <label for="nuts">Nuts</label>
+                    <br>
                 
-                <button type="button" class="button-style">Submit Selection</button>
-
-                <h3>Chocolate Bliss</h3>
-                <p><b>Select Toppings:</b></p>
-                <input type="checkbox" id="sprinkles" name="topping" value="Sprinkles">
-                <br>
-                <label for="sprinkles">Sprinkles</label>
-                <br>
+                    <input type="checkbox" id="caramel" name="topping" value="Caramel">
+                    <br>
+                    <label for="caramel">Caramel</label>
+                </div>
                
-                <input type="checkbox" id="nuts" name="topping" value="Nuts">
-                <br>
-                <label for="nuts">Nuts</label>
-                <br>
-               
-                <input type="checkbox" id="caramel" name="topping" value="Caramel">
-                <br>
-                <label for="caramel">Caramel</label>
-                <br><br>
-               
-                <button type="button" class="button-style">Submit Selection</button>
-
-                <br><br>
 
                 <p id="price-display">Total Price: $6.00</p>
                 <button type="submit" class="button-style">Finish Order</button>

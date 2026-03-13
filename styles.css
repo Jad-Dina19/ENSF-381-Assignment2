@@ -227,6 +227,7 @@ body{
     width: 300px;
     height: auto;
     margin-bottom: 20px;
+    border-radius: 15px;
 }
 
 .summary-main {
@@ -307,4 +308,11 @@ body{
 }
 
 
-
+.customize-order{
+    margin: 20px;
+    background-color: #f9e2c8;
+    border-radius: 15px;
+    padding: 25px;
+    width: 400px;
+    box-shadow:0 6px 18px rgba(0, 0, 0, 0.1);
+}
